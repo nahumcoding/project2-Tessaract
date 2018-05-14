@@ -1,0 +1,35 @@
+#welcome-header{
+  font-family: 'Monoton', serif;
+color: #5F9EA0;
+}
+
+#dropdownMenuButton{
+  background-color: red;
+}
+
+body{
+  background-image: url("../images/shawarma.jpg");
+background-repeat: no-repeat;
+background-size: full;
+-webkit-background-size: cover;
+     -moz-background-size: auto;
+     -o-background-size: full;
+
+}
+
+#welcome{
+  opacity: 0.5;
+background-color: ;
+}
+
+#login-button{
+  width: 150px
+
+}
+
+#login-button:hover{
+  position: relative;
+  top: 20px;
+  
+
+}
