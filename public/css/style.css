@@ -1,10 +1,15 @@
 #welcome-header{
   font-family: 'Monoton', serif;
-color: #5F9EA0;
+color: #0000FF;
 }
 
 #dropdownMenuButton{
   background-color: red;
+}
+
+.display-4{
+  font-family: 'Monoton', serif;
+color: #0000FF;
 }
 
 body{
@@ -30,6 +35,10 @@ background-color: ;
 #login-button:hover{
   position: relative;
   top: 20px;
-  
 
+
+}
+#groups{
+  position: relative;
+  top: 200px
 }

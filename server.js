@@ -28,7 +28,7 @@ app.use(express.static("public"));
 // Routes
 // =============================================================
 require("./routes/html-routes.js")(app);
-require("./routes/order-api-routes.js")(app);
+require("./routes/main.html")(app);
 require("./routes/waitress-api-routes.js")(app);
 require("./routes/menuitems-api-routes.js")(app);
 
