@@ -14,8 +14,18 @@ module.exports = function(app) {
 
   // index route loads view.html
   app.get("/", function(req, res) {
-    res.sendFile(path.join(__dirname, "../public/shawarma.html"));
+    res.sendFile(path.join(__dirname, "../public/login.html"));
   });
+// Route to the main.html page
+app.get("/main", function(req, res) {
+  res.sendFile(path.join(__dirname, "../public/main.html"));
+});
+// Route to the r.html page
+app.get("/receipt", function(req, res) {
+  res.sendFile(path.join(__dirname, "../public/receipt.html"));
+});
+
+
 
   
 }
