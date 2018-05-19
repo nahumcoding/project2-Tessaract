@@ -40,7 +40,7 @@ module.exports = function(app) {
  app.get("/api/waitress/auth/:userid", function(req, res){
     db.Waitress.findOne({
       where: {
-        id: req.params.userid
+        waitressID: req.params.userid
       }
     }).then(function(dbwaitress){
       res.json(dbwaitress);

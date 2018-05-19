@@ -5,67 +5,90 @@
   <meta charset="utf-8">
   <title></title>
   <link href="https://fonts.googleapis.com/css?family=Monoton|Neuton" rel="stylesheet">
-
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
   <link rel="stylesheet" href="css/style.css">
-
 </head>
 
-<body>
-  <div class="container" <div class="jumbotron">
-    <h1 class="display-4">Welcome To Shawarma Palace!</h1>
-  </div>
+<body id="background">
+  <div class="container">
+    <div class="jumbotron" id="welcome">
+      <h1 class="display-4 text-center" id="welcome-header">Shawarma Palace!</h1>
+      <hr class="my-4">
+      <p class="lead">
+    </div>
   </div>
   <div class="container" <form id="burger-search">
     <div class="form-group">
+      <div class="alert alert-warning alert-dismissible fade show" style="display:none;" role="alert">
+        <strong>Either the Order Name is empty or no item has been selected</strong> You should check in on some of those fields below.
+        <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
       <label for="exampleInputEmail1"></label>
-      <input type="user name" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter ID">
+      <input type="user name" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Order Name">
       <small id="emailHelp" class="form-text text-muted"></small>
-    </div>
-
-    <div class="form-group">
-    </div>
-
-    <div class="form-check">
     </div>
   </div>
   <div class="container">
-    <div class="row">
-      <div class="col-sm-1">
-        <button class="btn btn-primary" id="login-button" type="submit">Submit</button>
-
-      </div>
-
-
-      <div class="card" id="groups">
-        <form>
-          <div class="row">
-            <div class="col">
-              <input type="text" class="form-control" placeholder="Order Name">
-            </div>
-
-            <div class="col-lg-2">
-              <div class="input-group">
-                <span class="input-group-btn">
-                  <button type="button" class="quantity-left-minus btn btn-danger btn-number"  data-type="minus" data-field="">
-                <span class="glyphicon glyphicon-minus"></span>
-                </button>
-                </span>
-                <input type="text" id="quantity" name="quantity" class="form-control input-number" value="10" min="1" max="100">
-                <span class="input-group-btn">
-               <button type="button" class="quantity-right-plus btn btn-success btn-number" data-type="plus" data-field="">
-                  <span class="glyphicon glyphicon-plus"></span>
-                </button>
-                </span>
-              </div>
-            </div>
-          </div>
-        </form>
-      </div>
-      <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
-      <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
-      <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
-      <script src="js/increment.js"></script>
+    <table class="table-hover">
+      <table class="table">
+        <thead class="thead-dark">
+          <tr>
+            <th scope="col" class="heading">#</th>
+            <th scope="col" class="heading">Product</th>
+            <th scope="col" class="heading">Price</th>
+            <th scope="col" class="heading">Quantity</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <th scope="row" class="itemID">1</th>
+            <td class="itemDesc">Bacon Hulk Buster Deluxe Burger</td>
+            <td class="price">$5</td>
+            <td class="input"><input id="Quantity1" type="number" step="1" class="form-control" value="0" min="1" max="1000">
+            </td>
+          </tr>
+          <tr>
+            <th scope="row"  class="id">2</th>
+            <td class="itemDesc">Peter Porker Sub</td>
+            <td class="price">$8</td>
+            <td class="input"><input id="Quantity2" type="number" step="1" class="form-control" value="0" min="1" max="1000">
+          </tr>
+          <tr>
+            <th scope="row"  class="id">3</th>
+            <td class="itemDesc">Stark Industries Burger</td>
+            <td class="price">$7</td>
+            <td class="input"><input id="Quantity3" type="number" step="1" class="form-control" value="0" min="1" max="1000">
+          </tr>
+        </tbody>
+        <tbody>
+          <tr>
+            <th scope="row"  class="id">4</th>
+            <td class="itemDesc">Star Lord Beef Sandwitch</td>
+            <td class="price">$5</td>
+            <td class="input"><input id="Quantity4" type="number" step="1" class="form-control" value="0" min="1" max="1000">
+          </tr>
+          <tr>
+            <tbody>
+              <tr>
+                <th scope="row" class="id">5</th>
+                <td class="itemDesc">Spider-Ham Sandwitch</td>
+                <td class="price">$6</td>
+                <td class="input"><input id="Quantity5" type="number" step="1" class="form-control" value="0" min="1" max="1000"></td>
+              </tr>
+      </table>
+    </table>
+    <div class="col-lg-12">
+      <button class="btn btn-primary float-right" style="width: 100%" id="submit" type="submit">Submit</button>
+    </div>
+  </div>
+  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+  <script src="https://code.jquery.com/jquery-1.11.3.js"></script>
+  <script src="js/increment.js"></script>
+  <script src="js/orderProcessor.js"></script>
 </body>
 
 </html>

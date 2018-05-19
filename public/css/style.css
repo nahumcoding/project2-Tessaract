@@ -1,44 +1,171 @@
-#welcome-header{
+#welcome-header {
   font-family: 'Monoton', serif;
-color: #0000FF;
+  color: #0000FF;
 }
 
-#dropdownMenuButton{
+#dropdownMenuButton {
   background-color: red;
 }
 
-.display-4{
+.display-4 {
   font-family: 'Monoton', serif;
-color: #0000FF;
+  color: #0000FF;
 }
 
-body{
+#background {
   background-image: url("../images/shawarma.jpg");
-background-repeat: no-repeat;
-background-size: full;
--webkit-background-size: cover;
-     -moz-background-size: auto;
-     -o-background-size: full;
+  background-repeat: no-repeat;
+  background-size: full;
+  -webkit-background-size: cover;
+  -moz-background-size: auto;
+  -o-background-size: full;
+  background-size: cover;
+  
 
 }
 
-#welcome{
+#welcome {
   opacity: 0.5;
-background-color: ;
+  background-color: white;
 }
 
-#login-button{
-  width: 150px
-
+#login-button {
+  width: 150px;
+  margin-top: -10px;
+  float: right;
 }
 
-#login-button:hover{
+#login-button:hover {
   position: relative;
   top: 20px;
-
-
+  background-color: red;
+  color: pink;
 }
-#groups{
+
+#groups {
   position: relative;
-  top: 200px
+  top: 200px width: 100%
+}
+
+.jumbotron {
+  opacity: 0.5;
+  background-color: orange;
+}
+
+#shit {
+  margin-left: 0px;
+  margin-right: 0px;
+}
+
+.table {
+  background-color: green;
+}
+
+.table:hover {
+  color: #00BFFF;
+  background-color: #FF69B4;
+}
+
+#btn {
+  padding: 10%;
+}
+
+.form-control {}
+
+.invoice-box {
+  max-width: 800px;
+  margin: auto;
+  padding: 30px;
+  border: 1px solid #eee;
+  box-shadow: 0 0 10px rgba(0, 0, 0, .15);
+  font-size: 16px;
+  line-height: 24px;
+  font-family: 'Helvetica Neue', 'Helvetica', Helvetica, Arial, sans-serif;
+  color: #555;
+}
+
+.invoice-box table {
+  width: 100%;
+  line-height: inherit;
+  text-align: left;
+}
+
+.invoice-box table td {
+  padding: 5px;
+  vertical-align: top;
+}
+
+.invoice-box table tr td:nth-child(2) {
+  text-align: right;
+}
+
+.invoice-box table tr.top table td {
+  padding-bottom: 20px;
+}
+
+.invoice-box table tr.top table td.title {
+  font-size: 45px;
+  line-height: 45px;
+  color: #333;
+}
+
+.invoice-box table tr.information table td {
+  padding-bottom: 40px;
+}
+
+.invoice-box table tr.heading td {
+  background: #eee;
+  border-bottom: 1px solid #ddd;
+  font-weight: bold;
+}
+
+.invoice-box table tr.details td {
+  padding-bottom: 20px;
+}
+
+.invoice-box table tr.item td {
+  border-bottom: 1px solid #eee;
+}
+
+.invoice-box table tr.item.last td {
+  border-bottom: none;
+}
+
+.invoice-box table tr.total td:nth-child(3) {
+  border-top: 2px solid #eee;
+  font-weight: bold;
+}
+
+@media only screen and (max-width: 600px) {
+  .invoice-box table tr.top table td {
+    width: 100%;
+    display: block;
+    text-align: center;
+  }
+  .invoice-box table tr.information table td {
+    width: 100%;
+    display: block;
+    text-align: center;
+  }
+}
+
+/** RTL **/
+
+.rtl {
+  direction: rtl;
+  font-family: Tahoma, 'Helvetica Neue', 'Helvetica', Helvetica, Arial, sans-serif;
+}
+
+.rtl table {
+  text-align: right;
+}
+
+.rtl table tr td:nth-child(2) {
+  text-align: left;
+}
+
+#stark-industries {
+  height: 90px;
+  width: 100px;
+  margin-left: 20px;
 }

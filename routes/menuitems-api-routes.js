@@ -25,10 +25,15 @@ module.exports = function(app) {
 
 // Routes
 // =============================================================
+//{"{\"itemDesc\":\"Bacon Hulk Buster Deluxe Burger\",\"quantity\":1,\"total\":5,\"OrderId\":2}":""}
+
 
  app.post("/api/orderitems", function(req, res) {
     console.log("here");
-    db.MenuItems.bulkCreate(req.body).then(function(dbreciept){
+    console.log(req.body);
+
+
+    db.MenuItems.bulkCreate(req.body.order).then(function(dbreciept){
         res.json(dbreciept);
     });
  });
